@@ -1,0 +1,151 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>The Rhythmodulator</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Sidebar -->
+			<section id="sidebar">
+				<div class="inner">
+					<nav>
+						<ul>
+							<li><a href="#one">Background</a></li>
+							<li><a href="#two">Architecture</a></li>
+							<li><a href="#three">Sound Design</a></li>
+							<li><a href="#four">Demo</a></li>
+							<li><a href="#five">Source Code</a></li>
+						</ul>
+					</nav>
+				</div>
+			</section>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Intro -->
+					<section id="intro" class="wrapper style1 fade-up">
+						<div class="inner">
+							<h1>The Rhythmodulator</h1>
+							<p>An experimental instrument by Brendan Lamishaw</p>
+							<ul class="actions">
+								<li><a href="#one" class="button scrolly">Learn more</a></li>
+							</ul>
+						</div>
+					</section>
+
+				<!-- One -->
+					<section id="one" class="wrapper style2 spotlights">
+						<section>
+							<a href="#" class="image"><img src="images/pic01.jpg" alt="" data-position="center center" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>Inspiration</h2>
+									<p>As a long-time fan of hip-hop, electronic, and house music, I've always felt that drums truly dictated the genre of a track. The rest
+										 just seems to fall into place. The Rhythmodulator is designed to give users explicit control over a drum kit's kick and clap while movement implicitly controls a
+										 generative synth melody and bass stabs.
+									</p>
+								</div>
+							</div>
+						</section>
+					</section>
+
+				<!-- Two -->
+					<section id="two" class="wrapper style3 spotlights">
+						<section>
+							<a href="#" class="image"><img src="images/pic02.jpg" alt="" data-position="center center" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>Architecture</h2>
+									<p>The Rhythmodulator is composed of 4 sensors: two push buttons, a rotary encoder, and an ultrasonic sensor.
+										<ul>
+							 			<li>The buttons control the drum kit kick and clap respectively.</li>
+										<li>The rotary encoder controls the tempo of the generative synth chords as well as the speed of the drum kit hi-hats.</li>
+										<li> The ultrasonic sensor controls the pitch of the synth chords as well as plays the bass stab when close enough to an object.</li>
+									</ul>
+									Signal processing is done via an Arduino Uno and passed to Max/MSP to generate sound.
+									</p>
+								</div>
+							</div>
+						</section>
+					</section>
+
+					<!-- Three -->
+						<section id="three" class="wrapper style3-alt spotlights">
+							<section>
+								<a href="#" class="image"><img src="images/pic03.jpg" alt="" data-position="center center" /></a>
+								<div class="content">
+									<div class="inner">
+										<h2>Sound Design & Playing Technique</h2>
+										<p>
+											The bass and chord synth sounds are generated wholly in Max/MSP through wave manipulation. These synths underwent much processing and many iterations to achieve their current sounds.
+											The drum samples are taken from a stock Roland TR-909 drum kit.
+											<br><br>
+											The instrument is intended to held similar to a video-game controller. An individual will press each button with a different thumb and move the instrument up and down to trigger the ultrasonic sensor.
+											The rotary encoder can be turned to increase or decrease the tempo of the synth chords and drum hats.
+										</p>
+									</div>
+								</div>
+							</section>
+						</section>
+
+
+				<!-- Four -->
+					<section id="four" class="wrapper style1 fade-up">
+						<div class="inner">
+							<h2>Demo</h2>
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/Eree6iuxwz8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+					</section>
+
+					<!-- Five -->
+					<section id="five" class="wrapper style3 fade-up">
+
+						<div class="inner">
+							<h2>Source Code</h2>
+								<a href="/instrument-code/TwoSensors.ino" class="image" download>
+								  <img src="/images/arduino.jpg" width="50" height="50">
+									Arduino Code
+								</a>
+								<a href="/instrument-code/MaxCode.txt" class="image" style="padding-left: 5em" download>
+								  <img src="/images/max.jpg" width="50" height="50">
+									   Max/MSP Code
+								</a>
+								<a href="/instrument-code/samples.zip" class="image" style="padding-left: 5em" download>
+								  <img src="/images/drums.jpg" width="50" height="50">
+									   Drum Samples
+								</a>
+					</section>
+			</div>
+
+
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper style1-alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>Brendan Lamishaw</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
